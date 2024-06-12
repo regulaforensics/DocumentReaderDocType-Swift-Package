@@ -1,0 +1,1 @@
+# DocumentReaderDocType-Swift-Package
