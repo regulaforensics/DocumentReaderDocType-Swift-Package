@@ -1,15 +1,18 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.5
 import PackageDescription
 
 let package = Package(
     name: "DocType",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v15)],
     products: [
         .library(
             name: "DocType",
             targets: ["DocTypeStage"]),
     ],
     targets: [
-        .binaryTarget(name: "DocTypeStage", url: "https://pods.regulaforensics.com/Stage/DocTypeStage/9.9.20768/DocumentReaderCoreStage_doctype_9.9.20768.zip", checksum: "fb53473c8985f90f7e200f3b23d321e90587f5f20572a96703c131940b42d762"),
+        .binaryTarget(
+            name: "DocTypeStage",
+            url: "https://pods.regulaforensics.com/Stage/DocTypeStage/9.9.20784/DocumentReaderCoreStage_doctype_9.9.20784.zip",
+            checksum: "9b8626eea8cbbb35a0a6f457c30308ccc51d702cdcfe60f7d62c10cc51221503"),
     ]
 )
